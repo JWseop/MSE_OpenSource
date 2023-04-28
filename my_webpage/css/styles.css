@@ -2840,6 +2840,14 @@ img.u-pull-left {
     color       : var(--color-text-light);
 }
 
+.section-header .desc2 {
+    font-family : var(--font-1);
+    font-size   : calc(var(--text-size) * 1.1111);
+    font-weight : 400;
+    line-height : 1.8;
+    color       : var(--color-text-light);
+}
+
 .section-header::before {
     content        : attr(data-num);
     font-family    : var(--font-2);
