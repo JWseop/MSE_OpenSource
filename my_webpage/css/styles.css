@@ -1292,6 +1292,9 @@ textarea {
 .u-fullwidth {
     width : 100%;
 }
+.u-notfullwidth {
+    width : 50%;
+}
 
 .u-pull-left {
     float : left;
