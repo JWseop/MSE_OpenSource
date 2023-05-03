@@ -85,6 +85,35 @@
 
     }; // end ssMoveHeader
 
+    /* mp4 player
+    * ---------------------------------------------------- */ 
+    var video = document.getElementById('myVideo');
+    var poster = document.getElementById('videoPoster');
+
+    // 비디오를 클릭하면 재생 또는 일시 중지
+    video.addEventListener('click', function () {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+
+    // 포스터를 클릭하면 비디오 재생
+    poster.addEventListener('click', function () {
+      video.style.display = 'block';
+      poster.style.display = 'none';
+      video.play();
+    });
+
+    // 비디오 재생이 끝나면 포스터로 돌아오기
+    video.addEventListener('ended', function () {
+      video.pause();
+      video.style.display = 'none';
+      poster.style.display = 'block';
+    }); /* end mp4 player
+    * ---------------------------------------------------- */ 
+
    /* mobile menu
     * ---------------------------------------------------- */ 
     const ssMobileMenu = function() {
