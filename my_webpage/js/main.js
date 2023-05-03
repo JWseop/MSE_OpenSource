@@ -84,20 +84,6 @@
         });
 
     }; // end ssMoveHeader
-    
-    // HappyButton
-    document.getElementById('closeLink').addEventListener('click', function (event) {
-        event.preventDefault(); // 기본 a 태그 동작(링크 이동)을 막습니다.
-      
-        if (navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Chrome') === -1) {
-          // Safari 브라우저에서 실행 중인 경우
-          window.open('', '_self', '').close();
-        } else {
-          // 다른 브라우저에서 실행 중인 경우
-          window.close();
-        }
-      }); // end HappyButton
-      
 
    /* mobile menu
     * ---------------------------------------------------- */ 
