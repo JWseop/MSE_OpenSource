@@ -4451,7 +4451,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-footer__subscribe {
     --input-height : 7.2rem;
-    --btn-width    : 180px;
+    /* --btn-width    : 180px; */
 }
 
 .s-footer__subscribe h6 {
